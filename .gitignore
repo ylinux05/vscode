@@ -1,0 +1,23 @@
+# code-server specific
+.local
+.config/*
+!.config/code-server
+.vscode-remote
+workspace
+
+# Node
+node_modules/
+npm-debug.log
+
+# Build
+out/
+dist/
+.build/
+
+# Environment
+.env
+.env.local
+
+# OS specific
+.DS_Store
+Thumbs.db

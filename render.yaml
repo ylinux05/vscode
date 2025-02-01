@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: code-server
+    env: docker
+    dockerfilePath: ./Dockerfile
+    region: singapore  # Choose the closest region to you
+    plan: free  # Free tier
+    envVars:
+      - key: PASSWORD
+        value: your_secure_password_here  # Change this to your desired password
+    healthCheckPath: /
+    numInstances: 1
+    buildCommand: ""
